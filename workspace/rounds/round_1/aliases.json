@@ -1,0 +1,308 @@
+[
+  {
+    "alias": "自适应RAG",
+    "canonical": "Adaptive RAG",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "动态检索RAG",
+    "canonical": "Adaptive RAG",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "智能体RAG",
+    "canonical": "Agentic RAG",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "Agent RAG",
+    "canonical": "Agentic RAG",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "自主检索RAG",
+    "canonical": "Agentic RAG",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "引用忠实度",
+    "canonical": "Citation Faithfulness",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "引用准确性",
+    "canonical": "Citation Faithfulness",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "归因忠实度",
+    "canonical": "Citation Faithfulness",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "概念冗余",
+    "canonical": "Concept Redundancy",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "概念同质化",
+    "canonical": "Concept Redundancy",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "Concept Homogenization",
+    "canonical": "Concept Redundancy",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "纠错RAG",
+    "canonical": "Corrective RAG",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "修正RAG",
+    "canonical": "Corrective RAG",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "CRAG",
+    "canonical": "Corrective RAG",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "稠密检索",
+    "canonical": "Dense Retrieval",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "密集检索",
+    "canonical": "Dense Retrieval",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "Dense Passage Retrieval",
+    "canonical": "Dense Retrieval",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "DPR",
+    "canonical": "Dense Retrieval",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "事实验证",
+    "canonical": "Fact Verification",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "事实核查",
+    "canonical": "Fact Verification",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "FEVER",
+    "canonical": "Fact Verification",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "图增强RAG",
+    "canonical": "GraphRAG",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "图检索增强生成",
+    "canonical": "GraphRAG",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "知识库退化",
+    "canonical": "KB Degradation",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "知识库劣化",
+    "canonical": "KB Degradation",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "知识库维护退化",
+    "canonical": "KB Degradation",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "知识图谱RAG",
+    "canonical": "KG-RAG",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "Knowledge Graph RAG",
+    "canonical": "KG-RAG",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "知识边界",
+    "canonical": "Knowledge Boundary - 知识边界",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "LLM 知识边界",
+    "canonical": "Knowledge Boundary - 知识边界",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "知识边界探测",
+    "canonical": "Knowledge Boundary - 知识边界",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "长上下文",
+    "canonical": "Long-Context",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "超长上下文",
+    "canonical": "Long-Context",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "Long-context LM",
+    "canonical": "Long-Context",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "多跳检索",
+    "canonical": "Multi-Hop Retrieval",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "多步推理检索",
+    "canonical": "Multi-Hop Retrieval",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "Multi-step Retrieval",
+    "canonical": "Multi-Hop Retrieval",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "多模态RAG",
+    "canonical": "Multimodal RAG",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "视觉RAG",
+    "canonical": "Multimodal RAG",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "跨模态RAG",
+    "canonical": "Multimodal RAG",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "检索增强生成",
+    "canonical": "RAG",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "Retrieval-Augmented Generation",
+    "canonical": "RAG",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "检索增强生成系统",
+    "canonical": "RAG",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "RAG评估",
+    "canonical": "RAG Evaluation",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "RAG测评",
+    "canonical": "RAG Evaluation",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "RAGAS",
+    "canonical": "RAG Evaluation",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "自反思RAG",
+    "canonical": "Self-RAG",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "自检索RAG",
+    "canonical": "Self-RAG",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "自我反思RAG",
+    "canonical": "Self-RAG",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "推测性RAG",
+    "canonical": "Speculative RAG - 推测性RAG",
+    "confidence": 0.85,
+    "status": "confirmed"
+  },
+  {
+    "alias": "并行推测RAG",
+    "canonical": "Speculative RAG - 推测性RAG",
+    "confidence": 0.85,
+    "status": "confirmed"
+  }
+]

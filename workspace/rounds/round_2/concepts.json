@@ -1,0 +1,238 @@
+[
+  {
+    "concept_id": "concept_Adaptive_RAG",
+    "canonical_name": "Adaptive RAG",
+    "aliases": [
+      "自适应RAG",
+      "动态检索RAG"
+    ],
+    "page_id": "Adaptive_RAG",
+    "round_created": 2,
+    "round_updated": 2
+  },
+  {
+    "concept_id": "concept_Agentic_RAG",
+    "canonical_name": "Agentic RAG",
+    "aliases": [
+      "智能体RAG",
+      "Agent RAG",
+      "自主检索RAG"
+    ],
+    "page_id": "Agentic_RAG",
+    "round_created": 2,
+    "round_updated": 2
+  },
+  {
+    "concept_id": "concept_Citation_Faithfulness",
+    "canonical_name": "Citation Faithfulness",
+    "aliases": [
+      "引用忠实度",
+      "引用准确性",
+      "归因忠实度"
+    ],
+    "page_id": "Citation_Faithfulness",
+    "round_created": 2,
+    "round_updated": 2
+  },
+  {
+    "concept_id": "concept_Concept_Redundancy",
+    "canonical_name": "Concept Redundancy",
+    "aliases": [
+      "概念冗余",
+      "概念同质化",
+      "Concept Homogenization"
+    ],
+    "page_id": "Concept_Redundancy",
+    "round_created": 3,
+    "round_updated": 3
+  },
+  {
+    "concept_id": "concept_Corrective_RAG",
+    "canonical_name": "Corrective RAG",
+    "aliases": [
+      "纠错RAG",
+      "修正RAG",
+      "CRAG"
+    ],
+    "page_id": "Corrective_RAG",
+    "round_created": 2,
+    "round_updated": 2
+  },
+  {
+    "concept_id": "concept_Dense_Retrieval",
+    "canonical_name": "Dense Retrieval",
+    "aliases": [
+      "稠密检索",
+      "密集检索",
+      "Dense Passage Retrieval",
+      "DPR"
+    ],
+    "page_id": "Dense_Retrieval",
+    "round_created": 1,
+    "round_updated": 2
+  },
+  {
+    "concept_id": "concept_Fact_Verification",
+    "canonical_name": "Fact Verification",
+    "aliases": [
+      "事实验证",
+      "事实核查",
+      "FEVER"
+    ],
+    "page_id": "Fact_Verification",
+    "round_created": 1,
+    "round_updated": 1
+  },
+  {
+    "concept_id": "concept_GraphRAG",
+    "canonical_name": "GraphRAG",
+    "aliases": [
+      "图增强RAG",
+      "图检索增强生成"
+    ],
+    "page_id": "GraphRAG",
+    "round_created": 2,
+    "round_updated": 3
+  },
+  {
+    "concept_id": "concept_KB_Degradation",
+    "canonical_name": "KB Degradation",
+    "aliases": [
+      "知识库退化",
+      "知识库劣化",
+      "知识库维护退化"
+    ],
+    "page_id": "KB_Degradation",
+    "round_created": 3,
+    "round_updated": 3
+  },
+  {
+    "concept_id": "concept_KG_RAG",
+    "canonical_name": "KG-RAG",
+    "aliases": [
+      "知识图谱RAG",
+      "Knowledge Graph RAG"
+    ],
+    "page_id": "KG_RAG",
+    "round_created": 2,
+    "round_updated": 2
+  },
+  {
+    "concept_id": "concept_Knowledge_Boundary",
+    "canonical_name": "Knowledge Boundary - 知识边界",
+    "aliases": [
+      "知识边界",
+      "LLM 知识边界",
+      "知识边界探测"
+    ],
+    "page_id": "Knowledge_Boundary",
+    "round_created": 3,
+    "round_updated": 3
+  },
+  {
+    "concept_id": "concept_Long_Context",
+    "canonical_name": "Long-Context",
+    "aliases": [
+      "长上下文",
+      "超长上下文",
+      "Long-context LM"
+    ],
+    "page_id": "Long_Context",
+    "round_created": 3,
+    "round_updated": 3
+  },
+  {
+    "concept_id": "concept_Multi_Hop_Retrieval",
+    "canonical_name": "Multi-Hop Retrieval",
+    "aliases": [
+      "多跳检索",
+      "多步推理检索",
+      "Multi-step Retrieval"
+    ],
+    "page_id": "Multi_Hop_Retrieval",
+    "round_created": 2,
+    "round_updated": 2
+  },
+  {
+    "concept_id": "concept_Multimodal_RAG",
+    "canonical_name": "Multimodal RAG",
+    "aliases": [
+      "多模态RAG",
+      "视觉RAG",
+      "跨模态RAG"
+    ],
+    "page_id": "Multimodal_RAG",
+    "round_created": 3,
+    "round_updated": 3
+  },
+  {
+    "concept_id": "concept_RAG",
+    "canonical_name": "RAG",
+    "aliases": [
+      "检索增强生成",
+      "Retrieval-Augmented Generation",
+      "检索增强生成系统"
+    ],
+    "page_id": "RAG",
+    "round_created": 1,
+    "round_updated": 3
+  },
+  {
+    "concept_id": "concept_RAG_Evaluation",
+    "canonical_name": "RAG Evaluation",
+    "aliases": [
+      "RAG评估",
+      "RAG测评",
+      "RAGAS"
+    ],
+    "page_id": "RAG_Evaluation",
+    "round_created": 1,
+    "round_updated": 3
+  },
+  {
+    "concept_id": "concept_Self_RAG",
+    "canonical_name": "Self-RAG",
+    "aliases": [
+      "自反思RAG",
+      "自检索RAG",
+      "自我反思RAG"
+    ],
+    "page_id": "Self_RAG",
+    "round_created": 2,
+    "round_updated": 2
+  },
+  {
+    "concept_id": "concept_Speculative_RAG_RAG",
+    "canonical_name": "Speculative RAG - 推测性RAG",
+    "aliases": [
+      "推测性RAG",
+      "并行推测RAG"
+    ],
+    "page_id": "Speculative_RAG",
+    "round_created": 3,
+    "round_updated": 3
+  },
+  {
+    "concept_id": "concept_RAG_v2",
+    "canonical_name": "RAG v2",
+    "aliases": [
+      "检索增强生成",
+      "Retrieval-Augmented Generation",
+      "检索增强生成系统"
+    ],
+    "page_id": "RAG_v2",
+    "round_created": 2,
+    "round_updated": 2
+  },
+  {
+    "concept_id": "concept_GraphRAG_Lite",
+    "canonical_name": "GraphRAG Lite",
+    "aliases": [
+      "图增强RAG",
+      "图检索增强生成"
+    ],
+    "page_id": "GraphRAG_Lite",
+    "round_created": 2,
+    "round_updated": 2
+  }
+]

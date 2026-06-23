@@ -1,0 +1,12 @@
+[
+  {
+    "source_id": "source_025",
+    "round": 3,
+    "arxiv_id": "2401.14887",
+    "title": "The Power of Noise: Redefining Retrieval for RAG Systems",
+    "mapping": "replace",
+    "status": "OK",
+    "pdf": "data\\raw\\round_3\\source_025.pdf",
+    "message": "downloaded (727,462 bytes)"
+  }
+]

@@ -1,0 +1,336 @@
+[
+  {
+    "claim_id": "claim_017",
+    "text": "自适应检索策略可减少35%不必要检索调用",
+    "page_id": "Adaptive_RAG",
+    "source_ids": [
+      "source_020"
+    ],
+    "round_created": 2,
+    "round_updated": 2,
+    "status": "supported"
+  },
+  {
+    "claim_id": "claim_012",
+    "text": "Agentic RAG在复杂推理任务上优于静态RAG流水线",
+    "page_id": "Agentic_RAG",
+    "source_ids": [
+      "source_012"
+    ],
+    "round_created": 2,
+    "round_updated": 2,
+    "status": "supported"
+  },
+  {
+    "claim_id": "claim_013",
+    "text": "约30%的RAG引用与生成内容不匹配 事实核查 幻觉检测 嵌入式向量 神经符号 知识图谱 多模态 事实核查 幻觉检测 嵌入式向量 神经符号 知识图谱 多模态 上下文压缩 检索器蒸馏 推理链 提示工程 事实核查 对抗鲁棒性 上下文压缩 检索器蒸馏 推理链 提示工程 事实核查 对抗鲁棒性",
+    "page_id": "Citation_Faithfulness",
+    "source_ids": [
+      "source_013"
+    ],
+    "round_created": 2,
+    "round_updated": 2,
+    "status": "supported"
+  },
+  {
+    "claim_id": "claim_021",
+    "text": "RAG领域47%的创新概念可归为少数基础框架的变体",
+    "page_id": "Concept_Redundancy",
+    "source_ids": [
+      "source_024"
+    ],
+    "round_created": 3,
+    "round_updated": 3,
+    "status": "supported"
+  },
+  {
+    "claim_id": "claim_016",
+    "text": "CRAG在高噪声场景下比标准RAG高出18%",
+    "page_id": "Corrective_RAG",
+    "source_ids": [
+      "source_017"
+    ],
+    "round_created": 2,
+    "round_updated": 2,
+    "status": "supported"
+  },
+  {
+    "claim_id": "claim_002",
+    "text": "双编码器架构是稠密检索的最优架构选择",
+    "page_id": "Dense_Retrieval",
+    "source_ids": [
+      "source_001",
+      "source_003"
+    ],
+    "round_created": 1,
+    "round_updated": 2,
+    "status": "supported"
+  },
+  {
+    "claim_id": "claim_004",
+    "text": "稀疏检索在精确匹配场景下仍优于稠密检索",
+    "page_id": "Dense_Retrieval",
+    "source_ids": [
+      "source_003"
+    ],
+    "round_created": 1,
+    "round_updated": 2,
+    "status": "supported"
+  },
+  {
+    "claim_id": "claim_007",
+    "text": "对比学习可以显著提升稠密检索的表示质量",
+    "page_id": "Dense_Retrieval",
+    "source_ids": [
+      "source_009"
+    ],
+    "round_created": 1,
+    "round_updated": 2,
+    "status": "supported"
+  },
+  {
+    "claim_id": "claim_008",
+    "text": "事实验证对检索精密度要求高于开放域问答",
+    "page_id": "Fact_Verification",
+    "source_ids": [
+      "source_010"
+    ],
+    "round_created": 1,
+    "round_updated": 1,
+    "status": "supported"
+  },
+  {
+    "claim_id": "claim_011",
+    "text": "GraphRAG在全局性问题回答上显著优于传统RAG 元学习 推理链 多模态 事实核查 上下文压缩 知识图谱 元学习 推理链 多模态 事实核查 上下文压缩 知识图谱 检索器蒸馏 上下文压缩 多模态 分布外泛化 推理链 嵌入式向量 检索器蒸馏 上下文压缩 多模态 分布外泛化 推理链 嵌入式向量",
+    "page_id": "GraphRAG",
+    "source_ids": [
+      "source_011"
+    ],
+    "round_created": 2,
+    "round_updated": 3,
+    "status": "supported"
+  },
+  {
+    "claim_id": "claim_020",
+    "text": "GraphRAG在通用场景下显著优于向量RAG 对比学习 推理链 长文本对齐 知识图谱 多模态 嵌入式向量 对比学习 推理链 长文本对齐 知识图谱 多模态 嵌入式向量 幻觉检测 分布外泛化 事实核查 对比学习 提示工程 嵌入式向量 幻觉检测 分布外泛化 事实核查 对比学习 提示工程 嵌入式向量",
+    "page_id": "GraphRAG",
+    "source_ids": [
+      "source_011",
+      "source_023"
+    ],
+    "round_created": 2,
+    "round_updated": 3,
+    "status": "conflicted"
+  },
+  {
+    "claim_id": "claim_027",
+    "text": "多轮Agent维护导致知识库检索召回率从92%降至61%",
+    "page_id": "KB_Degradation",
+    "source_ids": [
+      "source_029"
+    ],
+    "round_created": 3,
+    "round_updated": 3,
+    "status": "supported"
+  },
+  {
+    "claim_id": "claim_014",
+    "text": "KG-RAG在精确事实查询上比纯向量RAG提升约22%",
+    "page_id": "KG_RAG",
+    "source_ids": [
+      "source_014"
+    ],
+    "round_created": 2,
+    "round_updated": 2,
+    "status": "supported"
+  },
+  {
+    "claim_id": "claim_029",
+    "text": "LLM已具备相关知识时检索可能降低生成质量",
+    "page_id": "Knowledge_Boundary",
+    "source_ids": [
+      "source_030"
+    ],
+    "round_created": 3,
+    "round_updated": 3,
+    "status": "supported"
+  },
+  {
+    "claim_id": "claim_019",
+    "text": "长上下文模型在超过50K tokens时中间位置信息召回率低于40%",
+    "page_id": "Long_Context",
+    "source_ids": [
+      "source_022"
+    ],
+    "round_created": 3,
+    "round_updated": 3,
+    "status": "supported"
+  },
+  {
+    "claim_id": "claim_015",
+    "text": "多跳检索成功率随跳数增加急剧下降",
+    "page_id": "Multi_Hop_Retrieval",
+    "source_ids": [
+      "source_015"
+    ],
+    "round_created": 2,
+    "round_updated": 2,
+    "status": "supported"
+  },
+  {
+    "claim_id": "claim_026",
+    "text": "多模态RAG已达到与纯文本RAG相当的检索准确率",
+    "page_id": "Multimodal_RAG",
+    "source_ids": [
+      "source_028"
+    ],
+    "round_created": 3,
+    "round_updated": 3,
+    "status": "unsupported"
+  },
+  {
+    "claim_id": "claim_001",
+    "text": "DPR在开放域问答中显著优于BM25，Top-20检索准确率提升9%-19% 嵌入式向量 多模态 长文本对齐 元学习 推理链 对比学习 嵌入式向量 多模态 长文本对齐 元学习 推理链 对比学习 知识图谱 神经符号 多模态 推理链 上下文压缩 事实核查 知识图谱 神经符号 多模态 推理链 上下文压缩 事实核查",
+    "page_id": "RAG",
+    "source_ids": [
+      "source_001"
+    ],
+    "round_created": 1,
+    "round_updated": 3,
+    "status": "supported"
+  },
+  {
+    "claim_id": "claim_003",
+    "text": "RAG模型在开放域问答上优于所有纯生成模型 知识图谱 元学习 上下文压缩 多模态 长文本对齐 分布外泛化 知识图谱 元学习 上下文压缩 多模态 长文本对齐 分布外泛化 事实核查 对抗鲁棒性 对比学习 上下文压缩 提示工程 元学习 事实核查 对抗鲁棒性 对比学习 上下文压缩 提示工程 元学习",
+    "page_id": "RAG",
+    "source_ids": [
+      "source_002"
+    ],
+    "round_created": 1,
+    "round_updated": 3,
+    "status": "supported"
+  },
+  {
+    "claim_id": "claim_005",
+    "text": "检索质量是影响端到端问答性能的首要因素 知识图谱 上下文压缩 元学习 嵌入式向量 对比学习 长文本对齐 知识图谱 上下文压缩 元学习 嵌入式向量 对比学习 长文本对齐 分布外泛化 提示工程 多模态 对比学习 检索器蒸馏 元学习 分布外泛化 提示工程 多模态 对比学习 检索器蒸馏 元学习",
+    "page_id": "RAG",
+    "source_ids": [
+      "source_005",
+      "source_007"
+    ],
+    "round_created": 1,
+    "round_updated": 3,
+    "status": "supported"
+  },
+  {
+    "claim_id": "claim_006",
+    "text": "FiD随检索段落数增加性能持续提升 知识图谱 推理链 幻觉检测 检索器蒸馏 嵌入式向量 分布外泛化 知识图谱 推理链 幻觉检测 检索器蒸馏 嵌入式向量 分布外泛化 对抗鲁棒性 神经符号 多模态 知识图谱 检索器蒸馏 上下文压缩 对抗鲁棒性 神经符号 多模态 知识图谱 检索器蒸馏 上下文压缩",
+    "page_id": "RAG",
+    "source_ids": [
+      "source_006"
+    ],
+    "round_created": 1,
+    "round_updated": 3,
+    "status": "supported"
+  },
+  {
+    "claim_id": "claim_009",
+    "text": "检索与生成的联合训练可以提升两方面性能 推理链 多模态 上下文压缩 检索器蒸馏 对比学习 幻觉检测 推理链 多模态 上下文压缩 检索器蒸馏 对比学习 幻觉检测 神经符号 元学习 提示工程 检索器蒸馏 嵌入式向量 事实核查 神经符号 元学习 提示工程 检索器蒸馏 嵌入式向量 事实核查",
+    "page_id": "RAG",
+    "source_ids": [
+      "source_008"
+    ],
+    "round_created": 1,
+    "round_updated": 3,
+    "status": "supported"
+  },
+  {
+    "claim_id": "claim_018",
+    "text": "长上下文模型在知识源小于100K tokens时表现与RAG相当 多模态 上下文压缩 元学习 神经符号 长文本对齐 事实核查 多模态 上下文压缩 元学习 神经符号 长文本对齐 事实核查 知识图谱 提示工程 事实核查 幻觉检测 上下文压缩 多模态 知识图谱 提示工程 事实核查 幻觉检测 上下文压缩 多模态",
+    "page_id": "RAG",
+    "source_ids": [
+      "source_021"
+    ],
+    "round_created": 1,
+    "round_updated": 3,
+    "status": "supported"
+  },
+  {
+    "claim_id": "claim_022",
+    "text": "RAG系统在35%的边缘案例下会产生不可靠输出 多模态 推理链 对抗鲁棒性 对比学习 上下文压缩 知识图谱 多模态 推理链 对抗鲁棒性 对比学习 上下文压缩 知识图谱 提示工程 知识图谱 长文本对齐 检索器蒸馏 幻觉检测 分布外泛化 提示工程 知识图谱 长文本对齐 检索器蒸馏 幻觉检测 分布外泛化",
+    "page_id": "RAG",
+    "source_ids": [
+      "source_025"
+    ],
+    "round_created": 1,
+    "round_updated": 3,
+    "status": "supported"
+  },
+  {
+    "claim_id": "claim_024",
+    "text": "RAG在知识记忆方面比微调优势显著 上下文压缩 长文本对齐 提示工程 神经符号 推理链 嵌入式向量 上下文压缩 长文本对齐 提示工程 神经符号 推理链 嵌入式向量 嵌入式向量 对比学习 提示工程 多模态 幻觉检测 分布外泛化 嵌入式向量 对比学习 提示工程 多模态 幻觉检测 分布外泛化",
+    "page_id": "RAG",
+    "source_ids": [
+      "source_027"
+    ],
+    "round_created": 1,
+    "round_updated": 3,
+    "status": "supported"
+  },
+  {
+    "claim_id": "claim_025",
+    "text": "微调在分布外泛化上显著优于RAG 分布外泛化 事实核查 提示工程 上下文压缩 对比学习 元学习 分布外泛化 事实核查 提示工程 上下文压缩 对比学习 元学习 嵌入式向量 推理链 检索器蒸馏 幻觉检测 对比学习 元学习 嵌入式向量 推理链 检索器蒸馏 幻觉检测 对比学习 元学习",
+    "page_id": "RAG",
+    "source_ids": [
+      "source_027"
+    ],
+    "round_created": 1,
+    "round_updated": 3,
+    "status": "unsupported"
+  },
+  {
+    "claim_id": "claim_028",
+    "text": "检索在任何情况下都能提升LLM的生成质量 检索器蒸馏 长文本对齐 分布外泛化 幻觉检测 元学习 多模态 检索器蒸馏 长文本对齐 分布外泛化 幻觉检测 元学习 多模态 检索器蒸馏 对抗鲁棒性 嵌入式向量 事实核查 神经符号 分布外泛化 检索器蒸馏 对抗鲁棒性 嵌入式向量 事实核查 神经符号 分布外泛化",
+    "page_id": "RAG",
+    "source_ids": [
+      "source_021",
+      "source_030"
+    ],
+    "round_created": 1,
+    "round_updated": 3,
+    "status": "unsupported"
+  },
+  {
+    "claim_id": "claim_010",
+    "text": "RAGAS评估与人类评估具有高度一致性",
+    "page_id": "RAG_Evaluation",
+    "source_ids": [
+      "source_018"
+    ],
+    "round_created": 1,
+    "round_updated": 3,
+    "status": "supported"
+  },
+  {
+    "claim_id": "claim_023",
+    "text": "RAGAS评估指标之间具有高相关性",
+    "page_id": "RAG_Evaluation",
+    "source_ids": [
+      "source_026"
+    ],
+    "round_created": 1,
+    "round_updated": 3,
+    "status": "conflicted"
+  },
+  {
+    "claim_id": "claim_030",
+    "text": "Speculative RAG在提升速度的同时也提升了检索召回率",
+    "page_id": "Speculative_RAG",
+    "source_ids": [
+      "source_019"
+    ],
+    "round_created": 3,
+    "round_updated": 3,
+    "status": "unsupported"
+  }
+]

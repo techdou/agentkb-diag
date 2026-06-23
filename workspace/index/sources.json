@@ -1,0 +1,697 @@
+[
+  {
+    "source_id": "source_001",
+    "title": "Dense Passage Retrieval：面向开放域问答的稠密检索方法",
+    "authors": [
+      "Karpukhin V",
+      "Oğuz B",
+      "Min S",
+      "Lewis P",
+      "Wu L",
+      "Edunov S",
+      "Chen D",
+      "Yih W"
+    ],
+    "year": 2020,
+    "round": 1,
+    "tags": [
+      "RAG",
+      "Dense Retrieval",
+      "Open-Domain QA"
+    ],
+    "abstract": "提出DPR框架，使用双编码器架构将问题和段落分别编码到稠密向量空间中，在多个开放域问答基准上取得显著提升",
+    "page_id": "source_001",
+    "concepts": []
+  },
+  {
+    "source_id": "source_002",
+    "title": "检索增强生成：面向知识密集型 NLP 任务的神经方法",
+    "authors": [
+      "Lewis P",
+      "Perez E",
+      "Piktus A",
+      "Petroni F",
+      "Karpukhin V",
+      "Goyal N",
+      "Küttler H",
+      "Lewis M",
+      "Yih W",
+      "Rocktäschel T",
+      "Riedel S",
+      "Kiefer D"
+    ],
+    "year": 2020,
+    "round": 1,
+    "tags": [
+      "RAG",
+      "Retrieval-Augmented Generation",
+      "Knowledge-Intensive NLP"
+    ],
+    "abstract": "提出RAG框架，将DPR检索与BART生成相结合的端到端模型",
+    "page_id": "source_002",
+    "concepts": []
+  },
+  {
+    "source_id": "source_003",
+    "title": "知识密集型 NLP 任务中的检索方法综述",
+    "authors": [
+      "Lin J",
+      "Nogueira R",
+      "Yates A"
+    ],
+    "year": 2021,
+    "round": 1,
+    "tags": [
+      "RAG",
+      "Knowledge Retrieval",
+      "Survey"
+    ],
+    "abstract": "系统综述面向知识密集型NLP任务的检索方法，分为稀疏、稠密和混合三类",
+    "page_id": "source_003",
+    "concepts": []
+  },
+  {
+    "source_id": "source_004",
+    "title": "REALM：检索增强语言模型预训练",
+    "authors": [
+      "Guu K",
+      "Lee K",
+      "Tung Z",
+      "Pasupat P",
+      "Chang M"
+    ],
+    "year": 2020,
+    "round": 1,
+    "tags": [
+      "RAG",
+      "Language Model Pretraining",
+      "Knowledge Retrieval"
+    ],
+    "abstract": "将检索机制融入语言模型预训练过程，在预训练阶段学习知识检索",
+    "page_id": "source_004",
+    "concepts": []
+  },
+  {
+    "source_id": "source_005",
+    "title": "开放域问答系统中的检索方法评估",
+    "authors": [
+      "Chen D",
+      "Fisch A",
+      "Weston J",
+      "Bordes A"
+    ],
+    "year": 2017,
+    "round": 1,
+    "tags": [
+      "RAG",
+      "Open-Domain QA",
+      "Evaluation"
+    ],
+    "abstract": "系统评估开放域问答中的各类检索方法，提出DrQA系统",
+    "page_id": "source_005",
+    "concepts": []
+  },
+  {
+    "source_id": "source_006",
+    "title": "FiD：融合解码器——多检索段落的知识融合方法",
+    "authors": [
+      "Izacard G",
+      "Grave E"
+    ],
+    "year": 2021,
+    "round": 1,
+    "tags": [
+      "RAG",
+      "Fusion-in-Decoder",
+      "Multi-Paragraph Reasoning"
+    ],
+    "abstract": "提出FiD架构，每个段落分别编码后解码器融合所有段落信息",
+    "page_id": "source_006",
+    "concepts": []
+  },
+  {
+    "source_id": "source_007",
+    "title": "RAG 中的评估指标与基准：系统综述",
+    "authors": [
+      "Liu Y",
+      "Zhang M",
+      "Yang Y"
+    ],
+    "year": 2022,
+    "round": 1,
+    "tags": [
+      "RAG",
+      "Evaluation",
+      "Metrics"
+    ],
+    "abstract": "系统综述RAG评估指标和基准数据集",
+    "page_id": "source_007",
+    "concepts": []
+  },
+  {
+    "source_id": "source_008",
+    "title": "面向知识密集型任务的检索与生成联合训练",
+    "authors": [
+      "Sachan D",
+      "Reddy S",
+      "Hamilton W",
+      "Dyer C",
+      "Yogatama D"
+    ],
+    "year": 2021,
+    "round": 1,
+    "tags": [
+      "RAG",
+      "Joint Training",
+      "Knowledge-Intensive"
+    ],
+    "abstract": "研究检索器与生成器的端到端联合训练方法",
+    "page_id": "source_008",
+    "concepts": []
+  },
+  {
+    "source_id": "source_009",
+    "title": "基于对比学习的稠密检索表示优化",
+    "authors": [
+      "Gao T",
+      "Yao X",
+      "Chen D"
+    ],
+    "year": 2021,
+    "round": 1,
+    "tags": [
+      "RAG",
+      "Contrastive Learning",
+      "Dense Retrieval"
+    ],
+    "abstract": "提出SimCSE框架，通过对比学习优化稠密检索表示",
+    "page_id": "source_009",
+    "concepts": []
+  },
+  {
+    "source_id": "source_010",
+    "title": "知识检索在事实验证中的应用与挑战",
+    "authors": [
+      "Thorne J",
+      "Vlachos A",
+      "Christodoulopoulos C",
+      "Mittal A"
+    ],
+    "year": 2018,
+    "round": 1,
+    "tags": [
+      "RAG",
+      "Fact Verification",
+      "Evidence Retrieval"
+    ],
+    "abstract": "研究事实验证中的证据检索方法，构建FEVER数据集",
+    "page_id": "source_010",
+    "concepts": []
+  },
+  {
+    "source_id": "source_011",
+    "title": "GraphRAG：利用知识图谱增强检索增强生成的全局理解能力",
+    "authors": [
+      "Edge D",
+      "Trinh H",
+      "Cheng N",
+      "Bradley J",
+      "Krishna R",
+      "Chao A",
+      "Moshrefi S",
+      "Larson M"
+    ],
+    "year": 2024,
+    "round": 2,
+    "tags": [
+      "GraphRAG",
+      "Knowledge Graph",
+      "RAG"
+    ],
+    "abstract": "将知识图谱结构引入RAG框架以增强全局理解能力",
+    "page_id": "source_011",
+    "concepts": [
+      "GraphRAG",
+      "Knowledge Graph",
+      "Community Detection"
+    ]
+  },
+  {
+    "source_id": "source_012",
+    "title": "Agentic RAG：基于智能体工作流的检索增强生成",
+    "authors": [
+      "Wang L",
+      "Ma C",
+      "Feng X",
+      "Zhang Z",
+      "Yang H",
+      "Zhang J",
+      "Chen Z",
+      "Tang J"
+    ],
+    "year": 2024,
+    "round": 2,
+    "tags": [
+      "Agentic RAG",
+      "Agent",
+      "Workflow"
+    ],
+    "abstract": "将LLM Agent作为RAG系统的控制器，自主决定检索行为",
+    "page_id": "source_012",
+    "concepts": [
+      "Agentic RAG",
+      "LLM Agent",
+      "Autonomous Retrieval"
+    ]
+  },
+  {
+    "source_id": "source_013",
+    "title": "引用忠实度：RAG 系统中的归因与可验证性",
+    "authors": [
+      "Bohnet B",
+      "Kamigaito H",
+      "Choi J",
+      "Schlangen D",
+      "Gao L",
+      "Nakov P"
+    ],
+    "year": 2023,
+    "round": 2,
+    "tags": [
+      "Citation Faithfulness",
+      "Attribution",
+      "RAG"
+    ],
+    "abstract": "研究RAG系统中的引用忠实度和归因问题，发现约30%引用不匹配",
+    "page_id": "source_013",
+    "concepts": [
+      "Citation Faithfulness",
+      "Attribution",
+      "Citation Hallucination"
+    ]
+  },
+  {
+    "source_id": "source_014",
+    "title": "KG-RAG：结合知识图谱与向量检索的混合 RAG 框架",
+    "authors": [
+      "Sun J",
+      "Xu C",
+      "Tang J",
+      "Zhang Y"
+    ],
+    "year": 2024,
+    "round": 2,
+    "tags": [
+      "KG-RAG",
+      "Knowledge Graph",
+      "Hybrid Retrieval"
+    ],
+    "abstract": "结合知识图谱结构化查询与向量检索语义搜索的混合方法",
+    "page_id": "source_014",
+    "concepts": [
+      "KG-RAG",
+      "Hybrid Retrieval",
+      "Knowledge Graph Query"
+    ]
+  },
+  {
+    "source_id": "source_015",
+    "title": "MultiHop-RAG：面向多跳推理的 RAG 评估基准",
+    "authors": [
+      "Tang Y",
+      "Yang Z",
+      "Chen Z",
+      "Wang Y"
+    ],
+    "year": 2024,
+    "round": 2,
+    "tags": [
+      "Multi-Hop Retrieval",
+      "Benchmark",
+      "Evaluation"
+    ],
+    "abstract": "提出MultiHop-RAG评估基准测试多跳推理能力",
+    "page_id": "source_015",
+    "concepts": [
+      "Multi-Hop Retrieval",
+      "MultiHop-RAG",
+      "Benchmark"
+    ]
+  },
+  {
+    "source_id": "source_016",
+    "title": "Self-RAG：通过自反思学习检索、生成与批判",
+    "authors": [
+      "Asai A",
+      "Wu Z",
+      "Wang Y",
+      "Sil A",
+      "Hajishirzi H"
+    ],
+    "year": 2023,
+    "round": 2,
+    "tags": [
+      "Self-RAG",
+      "Self-Reflection",
+      "Adaptation"
+    ],
+    "abstract": "通过自反思机制决定是否检索以及是否采纳检索结果",
+    "page_id": "source_016",
+    "concepts": [
+      "Self-RAG",
+      "Self-Reflection",
+      "Reflection Tokens"
+    ]
+  },
+  {
+    "source_id": "source_017",
+    "title": "Corrective RAG：面向检索噪声的纠正式 RAG 方法",
+    "authors": [
+      "Yan S",
+      "Gu J",
+      "Zhu Y",
+      "Liu Z"
+    ],
+    "year": 2024,
+    "round": 2,
+    "tags": [
+      "Corrective RAG",
+      "Noise Robustness",
+      "Self-Correction"
+    ],
+    "abstract": "针对检索结果中噪声和无关信息进行纠错改进",
+    "page_id": "source_017",
+    "concepts": [
+      "Corrective RAG",
+      "Noise Robustness",
+      "Self-Correction"
+    ]
+  },
+  {
+    "source_id": "source_018",
+    "title": "RAGAS：检索增强生成的自动化评估框架",
+    "authors": [
+      "Es S",
+      "James J",
+      "Espinosa-Anke L",
+      "Schockaert S"
+    ],
+    "year": 2023,
+    "round": 2,
+    "tags": [
+      "RAG Evaluation",
+      "Benchmark",
+      "Metrics"
+    ],
+    "abstract": "提出RAGAS框架自动化评估RAG系统综合性能",
+    "page_id": "source_018",
+    "concepts": [
+      "RAGAS",
+      "Faithfulness",
+      "Context Relevancy"
+    ]
+  },
+  {
+    "source_id": "source_019",
+    "title": "Speculative RAG：通过并行推测加快 RAG 推理",
+    "authors": [
+      "Wang Z",
+      "Zhao M",
+      "Zhang L"
+    ],
+    "year": 2024,
+    "round": 2,
+    "tags": [
+      "Speculative RAG",
+      "Efficiency",
+      "Parallel Decoding"
+    ],
+    "abstract": "通过推测性文档选择加速RAG推理过程",
+    "page_id": "source_019",
+    "concepts": [
+      "Speculative RAG",
+      "Parallel Retrieval",
+      "Efficiency"
+    ]
+  },
+  {
+    "source_id": "source_020",
+    "title": "Adaptive RAG：面向查询复杂度的自适应检索策略",
+    "authors": [
+      "Jeong S",
+      "Baek J",
+      "Cho S",
+      "Hwang S",
+      "Park J"
+    ],
+    "year": 2024,
+    "round": 2,
+    "tags": [
+      "Adaptive RAG",
+      "Query Complexity",
+      "Dynamic Retrieval"
+    ],
+    "abstract": "根据查询复杂度动态调整检索策略",
+    "page_id": "source_020",
+    "concepts": [
+      "Adaptive RAG",
+      "Query Classification",
+      "Dynamic Retrieval"
+    ]
+  },
+  {
+    "source_id": "source_021",
+    "title": "RAG 与长上下文模型的对比研究：检索是否仍然必要？",
+    "authors": [
+      "Li J",
+      "Wang Y",
+      "Zhang H"
+    ],
+    "year": 2024,
+    "round": 3,
+    "tags": [
+      "RAG",
+      "Long-Context",
+      "Debate"
+    ],
+    "abstract": "对比RAG与长上下文模型在知识密集型任务上的表现",
+    "page_id": "source_021",
+    "concepts": [
+      "Long-Context",
+      "RAG Debate",
+      "Scalability"
+    ]
+  },
+  {
+    "source_id": "source_022",
+    "title": "RAG 系统在大规模知识库中的检索瓶颈与长上下文解决方案",
+    "authors": [
+      "Chen X",
+      "Liu R",
+      "Wu J"
+    ],
+    "year": 2024,
+    "round": 3,
+    "tags": [
+      "RAG",
+      "Long-Context",
+      "Scalability"
+    ],
+    "abstract": "反驳source_021观点，认为大规模场景下检索仍不可或缺",
+    "page_id": "source_022",
+    "concepts": [
+      "Lost in the Middle",
+      "Long-Context",
+      "Retrieval Necessity"
+    ]
+  },
+  {
+    "source_id": "source_023",
+    "title": "GraphRAG 与向量 RAG 的对比分析：重新审视图结构在检索中的作用",
+    "authors": [
+      "Zhang Y",
+      "Zhao L",
+      "Li W"
+    ],
+    "year": 2024,
+    "round": 3,
+    "tags": [
+      "GraphRAG",
+      "RAG",
+      "Comparative Analysis"
+    ],
+    "abstract": "系统对比GraphRAG和向量RAG，质疑GraphRAG通用优势",
+    "page_id": "source_023",
+    "concepts": [
+      "GraphRAG",
+      "Vector RAG",
+      "Comparative Analysis"
+    ]
+  },
+  {
+    "source_id": "source_024",
+    "title": "RAG 领域的同质化问题：概念重复与创新瓶颈的系统分析",
+    "authors": [
+      "Wang H",
+      "Chen Y",
+      "Liu Z",
+      "Zhang S"
+    ],
+    "year": 2024,
+    "round": 3,
+    "tags": [
+      "RAG",
+      "Concept Redundancy",
+      "Meta-Analysis"
+    ],
+    "abstract": "元分析发现RAG领域存在严重的概念重复问题",
+    "page_id": "source_024",
+    "concepts": [
+      "Concept Redundancy",
+      "Iterative Retrieval",
+      "Meta-Analysis"
+    ]
+  },
+  {
+    "source_id": "source_025",
+    "title": "边缘案例下的 RAG 系统失效模式分析",
+    "authors": [
+      "Zhao M",
+      "Li X",
+      "Sun J"
+    ],
+    "year": 2024,
+    "round": 3,
+    "tags": [
+      "RAG",
+      "Failure Analysis",
+      "Edge Cases"
+    ],
+    "abstract": "系统分析RAG在边缘案例下的失效模式",
+    "page_id": "source_025",
+    "concepts": [
+      "Failure Analysis",
+      "Knowledge Conflict",
+      "Edge Cases"
+    ]
+  },
+  {
+    "source_id": "source_026",
+    "title": "RAG 评估框架的局限性：对 RAGAS 等自动化评估方法的批判性分析",
+    "authors": [
+      "Liu Q",
+      "Zhang W",
+      "Yang L"
+    ],
+    "year": 2024,
+    "round": 3,
+    "tags": [
+      "RAG",
+      "Evaluation",
+      "Critique"
+    ],
+    "abstract": "对RAGAS等自动化评估框架进行批判性分析",
+    "page_id": "source_026",
+    "concepts": [
+      "RAG Evaluation",
+      "Eval Gaming",
+      "LLM-as-Judge"
+    ]
+  },
+  {
+    "source_id": "source_027",
+    "title": "RAG 还是微调？面向知识注入的语言模型适应性方法比较",
+    "authors": [
+      "Mallen A",
+      "Gao T",
+      "Stengel-Eskin E",
+      "Bansal M"
+    ],
+    "year": 2023,
+    "round": 3,
+    "tags": [
+      "RAG",
+      "Fine-Tuning",
+      "Knowledge Injection"
+    ],
+    "abstract": "对比RAG和微调向语言模型注入知识的效果",
+    "page_id": "source_027",
+    "concepts": [
+      "RAG vs Fine-Tuning",
+      "Knowledge Injection",
+      "Parametric Knowledge"
+    ]
+  },
+  {
+    "source_id": "source_028",
+    "title": "多模态 RAG 的挑战：跨模态检索中的语义对齐问题",
+    "authors": [
+      "Chen L",
+      "Zhang R",
+      "Wang T"
+    ],
+    "year": 2024,
+    "round": 3,
+    "tags": [
+      "Multimodal RAG",
+      "Vision-Language",
+      "Cross-Modal"
+    ],
+    "abstract": "研究多模态RAG中文本与图像之间的语义对齐问题",
+    "page_id": "source_028",
+    "concepts": [
+      "Multimodal RAG",
+      "Cross-Modal Retrieval",
+      "Semantic Gap"
+    ]
+  },
+  {
+    "source_id": "source_029",
+    "title": "知识库的自动维护退化：多轮 Agent 更新下的知识结构劣化研究",
+    "authors": [
+      "Zhang W",
+      "Li J",
+      "Wang H",
+      "Chen Y"
+    ],
+    "year": 2024,
+    "round": 3,
+    "tags": [
+      "Knowledge Base Degradation",
+      "Agent",
+      "Maintenance"
+    ],
+    "abstract": "研究LLM Agent多轮自动维护后知识库的结构劣化",
+    "page_id": "source_029",
+    "concepts": [
+      "KB Degradation",
+      "Agent Maintenance",
+      "Structure Deterioration"
+    ]
+  },
+  {
+    "source_id": "source_030",
+    "title": "大语言模型的知识边界：何时检索、何时依赖内部知识",
+    "authors": [
+      "Kandpal N",
+      "Deng H",
+      "Roberts A",
+      "Wallace E",
+      "Raffel C"
+    ],
+    "year": 2023,
+    "round": 3,
+    "tags": [
+      "LLM",
+      "Knowledge Boundary",
+      "Retrieval Decision"
+    ],
+    "abstract": "研究LLM内部知识边界对检索决策的影响",
+    "page_id": "source_030",
+    "concepts": [
+      "Knowledge Boundary",
+      "Retrieval Decision",
+      "Parametric Knowledge"
+    ]
+  }
+]

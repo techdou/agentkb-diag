@@ -1,0 +1,622 @@
+[
+  {
+    "query_id": "q_001",
+    "query": "什么是RAG检索增强生成？其基本原理是什么？",
+    "expected_pages": [
+      "RAG"
+    ],
+    "expected_claims": [
+      "claim_003",
+      "claim_005",
+      "claim_009"
+    ],
+    "query_type": "concept_explanation"
+  },
+  {
+    "query_id": "q_002",
+    "query": "稠密检索DPR与稀疏检索BM25的区别是什么？",
+    "expected_pages": [
+      "Dense_Retrieval"
+    ],
+    "expected_claims": [
+      "claim_001",
+      "claim_004",
+      "claim_002"
+    ],
+    "query_type": "comparison"
+  },
+  {
+    "query_id": "q_003",
+    "query": "GraphRAG相比传统RAG有什么优势？",
+    "expected_pages": [
+      "GraphRAG",
+      "RAG"
+    ],
+    "expected_claims": [
+      "claim_011",
+      "claim_020"
+    ],
+    "query_type": "comparison"
+  },
+  {
+    "query_id": "q_004",
+    "query": "如何评估RAG系统的性能？有哪些指标？",
+    "expected_pages": [
+      "RAG_Evaluation"
+    ],
+    "expected_claims": [
+      "claim_010",
+      "claim_023"
+    ],
+    "query_type": "concept_explanation"
+  },
+  {
+    "query_id": "q_005",
+    "query": "多跳检索为什么困难？当前方法的效果如何？",
+    "expected_pages": [
+      "Multi_Hop_Retrieval"
+    ],
+    "expected_claims": [
+      "claim_015"
+    ],
+    "query_type": "concept_explanation"
+  },
+  {
+    "query_id": "q_006",
+    "query": "RAG技术从2020到2024年的发展演进是怎样的？",
+    "expected_pages": [
+      "RAG",
+      "Agentic_RAG",
+      "Self_RAG",
+      "Corrective_RAG"
+    ],
+    "expected_claims": [
+      "claim_003",
+      "claim_012",
+      "claim_016"
+    ],
+    "query_type": "method_trace"
+  },
+  {
+    "query_id": "q_007",
+    "query": "RAG系统在哪些情况下会失效？边缘案例有哪些？",
+    "expected_pages": [
+      "RAG"
+    ],
+    "expected_claims": [
+      "claim_022",
+      "claim_025"
+    ],
+    "query_type": "failure_case"
+  },
+  {
+    "query_id": "q_008",
+    "query": "引用忠实度在RAG系统中如何衡量？",
+    "expected_pages": [
+      "Citation_Faithfulness"
+    ],
+    "expected_claims": [
+      "claim_013"
+    ],
+    "query_type": "concept_explanation"
+  },
+  {
+    "query_id": "q_009",
+    "query": "Agent RAG和Self-RAG有什么区别？",
+    "expected_pages": [
+      "Agentic_RAG",
+      "Self_RAG"
+    ],
+    "expected_claims": [
+      "claim_012"
+    ],
+    "query_type": "comparison"
+  },
+  {
+    "query_id": "q_010",
+    "query": "长上下文模型是否会取代RAG？",
+    "expected_pages": [
+      "Long_Context",
+      "RAG"
+    ],
+    "expected_claims": [
+      "claim_018",
+      "claim_019",
+      "claim_028"
+    ],
+    "query_type": "comparison"
+  },
+  {
+    "query_id": "q_011",
+    "query": "什么是知识图谱RAG？与标准RAG有何不同？",
+    "expected_pages": [
+      "KG_RAG",
+      "GraphRAG",
+      "RAG"
+    ],
+    "expected_claims": [
+      "claim_020",
+      "claim_011"
+    ],
+    "query_type": "concept_explanation"
+  },
+  {
+    "query_id": "q_012",
+    "query": "多模态RAG的核心挑战是什么？",
+    "expected_pages": [
+      "Multimodal_RAG"
+    ],
+    "expected_claims": [
+      "claim_033"
+    ],
+    "query_type": "concept_explanation"
+  },
+  {
+    "query_id": "q_013",
+    "query": "什么是知识库退化？哪些因素会导致退化？",
+    "expected_pages": [
+      "KB_Degradation"
+    ],
+    "expected_claims": [
+      "claim_101",
+      "claim_102"
+    ],
+    "query_type": "concept_explanation"
+  },
+  {
+    "query_id": "q_014",
+    "query": "Agentic RAG与传统RAG的工作流程差异是什么？",
+    "expected_pages": [
+      "Agentic_RAG",
+      "RAG"
+    ],
+    "expected_claims": [
+      "claim_012",
+      "claim_009"
+    ],
+    "query_type": "concept_explanation"
+  },
+  {
+    "query_id": "q_015",
+    "query": "自反思式RAG的核心机制是什么？",
+    "expected_pages": [
+      "Self_RAG",
+      "Corrective_RAG"
+    ],
+    "expected_claims": [
+      "claim_016",
+      "claim_017"
+    ],
+    "query_type": "concept_explanation"
+  },
+  {
+    "query_id": "q_016",
+    "query": "引用忠实度与RAG评估指标之间有什么关系？",
+    "expected_pages": [
+      "Citation_Faithfulness",
+      "RAG_Evaluation"
+    ],
+    "expected_claims": [
+      "claim_013",
+      "claim_010"
+    ],
+    "query_type": "cross_concept"
+  },
+  {
+    "query_id": "q_017",
+    "query": "GraphRAG与Dense Retrieval在知识密集型任务上的表现对比",
+    "expected_pages": [
+      "GraphRAG",
+      "Dense_Retrieval"
+    ],
+    "expected_claims": [
+      "claim_011",
+      "claim_001"
+    ],
+    "query_type": "comparison"
+  },
+  {
+    "query_id": "q_018",
+    "query": "Self-RAG与Corrective RAG的自纠正机制有何异同？",
+    "expected_pages": [
+      "Self_RAG",
+      "Corrective_RAG"
+    ],
+    "expected_claims": [
+      "claim_016",
+      "claim_017"
+    ],
+    "query_type": "comparison"
+  },
+  {
+    "query_id": "q_019",
+    "query": "KG-RAG与GraphRAG在图结构利用上有什么区别？",
+    "expected_pages": [
+      "KG_RAG",
+      "GraphRAG"
+    ],
+    "expected_claims": [
+      "claim_020",
+      "claim_011"
+    ],
+    "query_type": "comparison"
+  },
+  {
+    "query_id": "q_020",
+    "query": "BM25和DPR在不同查询类型下的检索质量对比",
+    "expected_pages": [
+      "Dense_Retrieval"
+    ],
+    "expected_claims": [
+      "claim_001",
+      "claim_004"
+    ],
+    "query_type": "comparison"
+  },
+  {
+    "query_id": "q_021",
+    "query": "多跳检索中迭代检索与一次性检索有什么优劣？",
+    "expected_pages": [
+      "Multi_Hop_Retrieval"
+    ],
+    "expected_claims": [
+      "claim_015",
+      "claim_041"
+    ],
+    "query_type": "comparison"
+  },
+  {
+    "query_id": "q_022",
+    "query": "多模态RAG与纯文本RAG在检索策略上的差异",
+    "expected_pages": [
+      "Multimodal_RAG",
+      "RAG"
+    ],
+    "expected_claims": [
+      "claim_033",
+      "claim_003"
+    ],
+    "query_type": "comparison"
+  },
+  {
+    "query_id": "q_023",
+    "query": "标准RAG与知识图谱增强RAG的检索性能对比",
+    "expected_pages": [
+      "RAG",
+      "KG_RAG",
+      "GraphRAG"
+    ],
+    "expected_claims": [
+      "claim_003",
+      "claim_020"
+    ],
+    "query_type": "comparison"
+  },
+  {
+    "query_id": "q_024",
+    "query": "Agent型RAG与自反思型RAG的架构差异分析",
+    "expected_pages": [
+      "Agentic_RAG",
+      "Self_RAG"
+    ],
+    "expected_claims": [
+      "claim_012",
+      "claim_016"
+    ],
+    "query_type": "comparison"
+  },
+  {
+    "query_id": "q_025",
+    "query": "RAG检索增强生成经历了哪几个发展阶段？",
+    "expected_pages": [
+      "RAG",
+      "Dense_Retrieval",
+      "Agentic_RAG",
+      "GraphRAG"
+    ],
+    "expected_claims": [
+      "claim_003",
+      "claim_012",
+      "claim_011"
+    ],
+    "query_type": "method_trace"
+  },
+  {
+    "query_id": "q_026",
+    "query": "从BM25到DPR再到学习型检索的发展脉络",
+    "expected_pages": [
+      "Dense_Retrieval"
+    ],
+    "expected_claims": [
+      "claim_001",
+      "claim_002",
+      "claim_004"
+    ],
+    "query_type": "method_trace"
+  },
+  {
+    "query_id": "q_027",
+    "query": "知识图谱在RAG中的应用演进：从KG-RAG到GraphRAG",
+    "expected_pages": [
+      "KG_RAG",
+      "GraphRAG"
+    ],
+    "expected_claims": [
+      "claim_020",
+      "claim_011"
+    ],
+    "query_type": "method_trace"
+  },
+  {
+    "query_id": "q_028",
+    "query": "Agent RAG的发展路线：从简单工具调用到多步推理",
+    "expected_pages": [
+      "Agentic_RAG",
+      "RAG"
+    ],
+    "expected_claims": [
+      "claim_012",
+      "claim_009"
+    ],
+    "query_type": "method_trace"
+  },
+  {
+    "query_id": "q_029",
+    "query": "多跳检索技术从早期到近期的方法演进",
+    "expected_pages": [
+      "Multi_Hop_Retrieval",
+      "Dense_Retrieval"
+    ],
+    "expected_claims": [
+      "claim_015",
+      "claim_001"
+    ],
+    "query_type": "method_trace"
+  },
+  {
+    "query_id": "q_030",
+    "query": "RAG评估方法的时间线：从准确率到忠实度多维评估",
+    "expected_pages": [
+      "RAG_Evaluation",
+      "Citation_Faithfulness"
+    ],
+    "expected_claims": [
+      "claim_010",
+      "claim_013"
+    ],
+    "query_type": "method_trace"
+  },
+  {
+    "query_id": "q_031",
+    "query": "长上下文模型与RAG技术的交替发展历程",
+    "expected_pages": [
+      "Long_Context",
+      "RAG"
+    ],
+    "expected_claims": [
+      "claim_018",
+      "claim_003"
+    ],
+    "query_type": "method_trace"
+  },
+  {
+    "query_id": "q_032",
+    "query": "自反思式检索从Self-RAG到Corrective RAG的方法演变",
+    "expected_pages": [
+      "Self_RAG",
+      "Corrective_RAG"
+    ],
+    "expected_claims": [
+      "claim_016",
+      "claim_017"
+    ],
+    "query_type": "method_trace"
+  },
+  {
+    "query_id": "q_033",
+    "query": "知识库结构退化如何影响多模态RAG的检索性能？",
+    "expected_pages": [
+      "KB_Degradation",
+      "Multimodal_RAG"
+    ],
+    "expected_claims": [
+      "claim_101",
+      "claim_033"
+    ],
+    "query_type": "cross_concept"
+  },
+  {
+    "query_id": "q_034",
+    "query": "引用忠实度与长上下文模型的信息可靠性有什么关联？",
+    "expected_pages": [
+      "Citation_Faithfulness",
+      "Long_Context"
+    ],
+    "expected_claims": [
+      "claim_013",
+      "claim_018"
+    ],
+    "query_type": "cross_concept"
+  },
+  {
+    "query_id": "q_035",
+    "query": "知识图谱RAG中的实体链接错误如何影响多跳检索？",
+    "expected_pages": [
+      "KG_RAG",
+      "Multi_Hop_Retrieval"
+    ],
+    "expected_claims": [
+      "claim_020",
+      "claim_015"
+    ],
+    "query_type": "cross_concept"
+  },
+  {
+    "query_id": "q_036",
+    "query": "Agentic RAG的决策透明性与引用忠实度评估之间的关系",
+    "expected_pages": [
+      "Agentic_RAG",
+      "Citation_Faithfulness",
+      "RAG_Evaluation"
+    ],
+    "expected_claims": [
+      "claim_012",
+      "claim_013"
+    ],
+    "query_type": "cross_concept"
+  },
+  {
+    "query_id": "q_037",
+    "query": "稠密检索在知识库退化的不同阶段表现有何变化？",
+    "expected_pages": [
+      "Dense_Retrieval",
+      "KB_Degradation"
+    ],
+    "expected_claims": [
+      "claim_001",
+      "claim_102"
+    ],
+    "query_type": "cross_concept"
+  },
+  {
+    "query_id": "q_038",
+    "query": "RAG评估与知识库健康诊断的指标重叠与互补",
+    "expected_pages": [
+      "RAG_Evaluation",
+      "KB_Degradation"
+    ],
+    "expected_claims": [
+      "claim_010",
+      "claim_101"
+    ],
+    "query_type": "cross_concept"
+  },
+  {
+    "query_id": "q_039",
+    "query": "多模态检索中的幻觉问题与引用忠实度机制的关系",
+    "expected_pages": [
+      "Multimodal_RAG",
+      "Citation_Faithfulness"
+    ],
+    "expected_claims": [
+      "claim_033",
+      "claim_013"
+    ],
+    "query_type": "cross_concept"
+  },
+  {
+    "query_id": "q_040",
+    "query": "GraphRAG的图结构质量与知识库退化的交互影响",
+    "expected_pages": [
+      "GraphRAG",
+      "KB_Degradation"
+    ],
+    "expected_claims": [
+      "claim_011",
+      "claim_101"
+    ],
+    "query_type": "cross_concept"
+  },
+  {
+    "query_id": "q_041",
+    "query": "什么是Citation_Faithfulness评估方法？如何衡量引用质量？",
+    "expected_pages": [
+      "Citation_Faithfulness"
+    ],
+    "expected_claims": [
+      "claim_013"
+    ],
+    "query_type": "failure_case"
+  },
+  {
+    "query_id": "q_042",
+    "query": "Self-RAG与自反思式RAG在实现中的具体区别是什么？",
+    "expected_pages": [
+      "Self_RAG",
+      "Corrective_RAG"
+    ],
+    "expected_claims": [
+      "claim_016",
+      "claim_017"
+    ],
+    "query_type": "failure_case"
+  },
+  {
+    "query_id": "q_043",
+    "query": "多模态RAG系统如何进行视觉信息的检索和融合？",
+    "expected_pages": [
+      "Multimodal_RAG"
+    ],
+    "expected_claims": [
+      "claim_033",
+      "claim_034"
+    ],
+    "query_type": "failure_case"
+  },
+  {
+    "query_id": "q_044",
+    "query": "知识库可检索性退化的早期预警信号有哪些？",
+    "expected_pages": [
+      "KB_Degradation",
+      "RAG_Evaluation"
+    ],
+    "expected_claims": [
+      "claim_101",
+      "claim_102",
+      "claim_103"
+    ],
+    "query_type": "failure_case"
+  },
+  {
+    "query_id": "q_045",
+    "query": "长上下文模型在128K以上token时的检索效果是否优于RAG？",
+    "expected_pages": [
+      "Long_Context",
+      "RAG"
+    ],
+    "expected_claims": [
+      "claim_018",
+      "claim_019",
+      "claim_028"
+    ],
+    "query_type": "failure_case"
+  },
+  {
+    "query_id": "q_046",
+    "query": "RAG系统中的事实验证机制如何运作？",
+    "expected_pages": [
+      "Citation_Faithfulness",
+      "RAG_Evaluation"
+    ],
+    "expected_claims": [
+      "claim_013",
+      "claim_010"
+    ],
+    "query_type": "failure_case"
+  },
+  {
+    "query_id": "q_047",
+    "query": "Corrective RAG的纠正是否真正提高了检索质量？",
+    "expected_pages": [
+      "Corrective_RAG",
+      "Self_RAG"
+    ],
+    "expected_claims": [
+      "claim_017",
+      "claim_016"
+    ],
+    "query_type": "failure_case"
+  },
+  {
+    "query_id": "q_048",
+    "query": "Agent维护的知识库在第三轮之后是否出现明显的性能退化？",
+    "expected_pages": [
+      "KB_Degradation"
+    ],
+    "expected_claims": [
+      "claim_101",
+      "claim_103"
+    ],
+    "query_type": "failure_case"
+  }
+]

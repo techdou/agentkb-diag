@@ -1,0 +1,1224 @@
+{
+  "nodes": [
+    {
+      "id": "Adaptive_RAG",
+      "type": "concept_page",
+      "label": "Adaptive RAG",
+      "round_created": 2,
+      "issue_flags": []
+    },
+    {
+      "id": "Agentic_RAG",
+      "type": "concept_page",
+      "label": "Agentic RAG",
+      "round_created": 2,
+      "issue_flags": []
+    },
+    {
+      "id": "Citation_Faithfulness",
+      "type": "concept_page",
+      "label": "Citation Faithfulness",
+      "round_created": 2,
+      "issue_flags": []
+    },
+    {
+      "id": "Concept_Redundancy",
+      "type": "concept_page",
+      "label": "Concept Redundancy",
+      "round_created": 3,
+      "issue_flags": []
+    },
+    {
+      "id": "Corrective_RAG",
+      "type": "concept_page",
+      "label": "Corrective RAG",
+      "round_created": 2,
+      "issue_flags": []
+    },
+    {
+      "id": "Dense_Retrieval",
+      "type": "concept_page",
+      "label": "Dense Retrieval",
+      "round_created": 1,
+      "issue_flags": []
+    },
+    {
+      "id": "Fact_Verification",
+      "type": "concept_page",
+      "label": "Fact Verification",
+      "round_created": 1,
+      "issue_flags": []
+    },
+    {
+      "id": "GraphRAG",
+      "type": "concept_page",
+      "label": "GraphRAG",
+      "round_created": 2,
+      "issue_flags": []
+    },
+    {
+      "id": "KB_Degradation",
+      "type": "concept_page",
+      "label": "KB Degradation",
+      "round_created": 3,
+      "issue_flags": []
+    },
+    {
+      "id": "KG_RAG",
+      "type": "concept_page",
+      "label": "KG-RAG",
+      "round_created": 2,
+      "issue_flags": []
+    },
+    {
+      "id": "Knowledge_Boundary",
+      "type": "concept_page",
+      "label": "Knowledge Boundary - 知识边界",
+      "round_created": 3,
+      "issue_flags": []
+    },
+    {
+      "id": "Long_Context",
+      "type": "concept_page",
+      "label": "Long-Context",
+      "round_created": 3,
+      "issue_flags": []
+    },
+    {
+      "id": "Multi_Hop_Retrieval",
+      "type": "concept_page",
+      "label": "Multi-Hop Retrieval",
+      "round_created": 2,
+      "issue_flags": []
+    },
+    {
+      "id": "Multimodal_RAG",
+      "type": "concept_page",
+      "label": "Multimodal RAG",
+      "round_created": 3,
+      "issue_flags": []
+    },
+    {
+      "id": "RAG",
+      "type": "concept_page",
+      "label": "RAG",
+      "round_created": 1,
+      "issue_flags": []
+    },
+    {
+      "id": "RAG_Evaluation",
+      "type": "concept_page",
+      "label": "RAG Evaluation",
+      "round_created": 1,
+      "issue_flags": []
+    },
+    {
+      "id": "Self_RAG",
+      "type": "concept_page",
+      "label": "Self-RAG",
+      "round_created": 2,
+      "issue_flags": []
+    },
+    {
+      "id": "Speculative_RAG",
+      "type": "concept_page",
+      "label": "Speculative RAG - 推测性RAG",
+      "round_created": 3,
+      "issue_flags": []
+    },
+    {
+      "id": "source_001",
+      "type": "source_page",
+      "label": "Dense Passage Retrieval：面向开放域问答的稠密检索方法",
+      "round_created": 1,
+      "issue_flags": []
+    },
+    {
+      "id": "source_002",
+      "type": "source_page",
+      "label": "检索增强生成：面向知识密集型 NLP 任务的神经方法",
+      "round_created": 1,
+      "issue_flags": []
+    },
+    {
+      "id": "source_003",
+      "type": "source_page",
+      "label": "知识密集型 NLP 任务中的检索方法综述",
+      "round_created": 1,
+      "issue_flags": []
+    },
+    {
+      "id": "source_004",
+      "type": "source_page",
+      "label": "REALM：检索增强语言模型预训练",
+      "round_created": 1,
+      "issue_flags": []
+    },
+    {
+      "id": "source_005",
+      "type": "source_page",
+      "label": "开放域问答系统中的检索方法评估",
+      "round_created": 1,
+      "issue_flags": []
+    },
+    {
+      "id": "source_006",
+      "type": "source_page",
+      "label": "FiD：融合解码器——多检索段落的知识融合方法",
+      "round_created": 1,
+      "issue_flags": []
+    },
+    {
+      "id": "source_007",
+      "type": "source_page",
+      "label": "RAG 中的评估指标与基准：系统综述",
+      "round_created": 1,
+      "issue_flags": []
+    },
+    {
+      "id": "source_008",
+      "type": "source_page",
+      "label": "面向知识密集型任务的检索与生成联合训练",
+      "round_created": 1,
+      "issue_flags": []
+    },
+    {
+      "id": "source_009",
+      "type": "source_page",
+      "label": "基于对比学习的稠密检索表示优化",
+      "round_created": 1,
+      "issue_flags": []
+    },
+    {
+      "id": "source_010",
+      "type": "source_page",
+      "label": "知识检索在事实验证中的应用与挑战",
+      "round_created": 1,
+      "issue_flags": []
+    },
+    {
+      "id": "source_011",
+      "type": "source_page",
+      "label": "GraphRAG：利用知识图谱增强检索增强生成的全局理解能力",
+      "round_created": 2,
+      "issue_flags": []
+    },
+    {
+      "id": "source_012",
+      "type": "source_page",
+      "label": "Agentic RAG：基于智能体工作流的检索增强生成",
+      "round_created": 2,
+      "issue_flags": []
+    },
+    {
+      "id": "source_013",
+      "type": "source_page",
+      "label": "引用忠实度：RAG 系统中的归因与可验证性",
+      "round_created": 2,
+      "issue_flags": []
+    },
+    {
+      "id": "source_014",
+      "type": "source_page",
+      "label": "KG-RAG：结合知识图谱与向量检索的混合 RAG 框架",
+      "round_created": 2,
+      "issue_flags": []
+    },
+    {
+      "id": "source_015",
+      "type": "source_page",
+      "label": "MultiHop-RAG：面向多跳推理的 RAG 评估基准",
+      "round_created": 2,
+      "issue_flags": []
+    },
+    {
+      "id": "source_016",
+      "type": "source_page",
+      "label": "Self-RAG：通过自反思学习检索、生成与批判",
+      "round_created": 2,
+      "issue_flags": []
+    },
+    {
+      "id": "source_017",
+      "type": "source_page",
+      "label": "Corrective RAG：面向检索噪声的纠正式 RAG 方法",
+      "round_created": 2,
+      "issue_flags": []
+    },
+    {
+      "id": "source_018",
+      "type": "source_page",
+      "label": "RAGAS：检索增强生成的自动化评估框架",
+      "round_created": 2,
+      "issue_flags": []
+    },
+    {
+      "id": "source_019",
+      "type": "source_page",
+      "label": "Speculative RAG：通过并行推测加快 RAG 推理",
+      "round_created": 2,
+      "issue_flags": []
+    },
+    {
+      "id": "source_020",
+      "type": "source_page",
+      "label": "Adaptive RAG：面向查询复杂度的自适应检索策略",
+      "round_created": 2,
+      "issue_flags": []
+    },
+    {
+      "id": "source_021",
+      "type": "source_page",
+      "label": "RAG 与长上下文模型的对比研究：检索是否仍然必要？",
+      "round_created": 3,
+      "issue_flags": []
+    },
+    {
+      "id": "source_022",
+      "type": "source_page",
+      "label": "RAG 系统在大规模知识库中的检索瓶颈与长上下文解决方案",
+      "round_created": 3,
+      "issue_flags": []
+    },
+    {
+      "id": "source_023",
+      "type": "source_page",
+      "label": "GraphRAG 与向量 RAG 的对比分析：重新审视图结构在检索中的作用",
+      "round_created": 3,
+      "issue_flags": []
+    },
+    {
+      "id": "source_024",
+      "type": "source_page",
+      "label": "RAG 领域的同质化问题：概念重复与创新瓶颈的系统分析",
+      "round_created": 3,
+      "issue_flags": []
+    },
+    {
+      "id": "source_025",
+      "type": "source_page",
+      "label": "边缘案例下的 RAG 系统失效模式分析",
+      "round_created": 3,
+      "issue_flags": []
+    },
+    {
+      "id": "source_026",
+      "type": "source_page",
+      "label": "RAG 评估框架的局限性：对 RAGAS 等自动化评估方法的批判性分析",
+      "round_created": 3,
+      "issue_flags": []
+    },
+    {
+      "id": "source_027",
+      "type": "source_page",
+      "label": "RAG 还是微调？面向知识注入的语言模型适应性方法比较",
+      "round_created": 3,
+      "issue_flags": []
+    },
+    {
+      "id": "source_028",
+      "type": "source_page",
+      "label": "多模态 RAG 的挑战：跨模态检索中的语义对齐问题",
+      "round_created": 3,
+      "issue_flags": []
+    },
+    {
+      "id": "source_029",
+      "type": "source_page",
+      "label": "知识库的自动维护退化：多轮 Agent 更新下的知识结构劣化研究",
+      "round_created": 3,
+      "issue_flags": []
+    },
+    {
+      "id": "source_030",
+      "type": "source_page",
+      "label": "大语言模型的知识边界：何时检索、何时依赖内部知识",
+      "round_created": 3,
+      "issue_flags": []
+    },
+    {
+      "id": "kb_health",
+      "type": "synthesis_page",
+      "label": "知识库健康状态分析",
+      "round_created": 3,
+      "issue_flags": []
+    },
+    {
+      "id": "rag_conflicts",
+      "type": "synthesis_page",
+      "label": "RAG 领域主要争论与冲突观点",
+      "round_created": 3,
+      "issue_flags": []
+    },
+    {
+      "id": "rag_evolution",
+      "type": "synthesis_page",
+      "label": "RAG 技术演进综合报告",
+      "round_created": 3,
+      "issue_flags": []
+    },
+    {
+      "id": "RAG_v2",
+      "type": "concept_page",
+      "label": "RAG v2",
+      "round_created": 2,
+      "issue_flags": []
+    },
+    {
+      "id": "GraphRAG_Lite",
+      "type": "concept_page",
+      "label": "GraphRAG Lite",
+      "round_created": 2,
+      "issue_flags": []
+    }
+  ],
+  "edges": [
+    {
+      "source": "Adaptive_RAG",
+      "target": "RAG",
+      "type": "references",
+      "round_created": 2,
+      "confidence": 1.0
+    },
+    {
+      "source": "Adaptive_RAG",
+      "target": "Agentic_RAG",
+      "type": "references",
+      "round_created": 2,
+      "confidence": 1.0
+    },
+    {
+      "source": "Adaptive_RAG",
+      "target": "source_020",
+      "type": "references",
+      "round_created": 2,
+      "confidence": 1.0
+    },
+    {
+      "source": "Agentic_RAG",
+      "target": "RAG",
+      "type": "references",
+      "round_created": 2,
+      "confidence": 1.0
+    },
+    {
+      "source": "Agentic_RAG",
+      "target": "Self_RAG",
+      "type": "references",
+      "round_created": 2,
+      "confidence": 1.0
+    },
+    {
+      "source": "Agentic_RAG",
+      "target": "Corrective_RAG",
+      "type": "references",
+      "round_created": 2,
+      "confidence": 1.0
+    },
+    {
+      "source": "Agentic_RAG",
+      "target": "source_012",
+      "type": "references",
+      "round_created": 2,
+      "confidence": 1.0
+    },
+    {
+      "source": "Citation_Faithfulness",
+      "target": "RAG",
+      "type": "references",
+      "round_created": 2,
+      "confidence": 1.0
+    },
+    {
+      "source": "Citation_Faithfulness",
+      "target": "source_013",
+      "type": "references",
+      "round_created": 2,
+      "confidence": 1.0
+    },
+    {
+      "source": "Concept_Redundancy",
+      "target": "source_024",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "Corrective_RAG",
+      "target": "RAG",
+      "type": "references",
+      "round_created": 2,
+      "confidence": 1.0
+    },
+    {
+      "source": "Corrective_RAG",
+      "target": "Self_RAG",
+      "type": "references",
+      "round_created": 2,
+      "confidence": 1.0
+    },
+    {
+      "source": "Corrective_RAG",
+      "target": "source_017",
+      "type": "references",
+      "round_created": 2,
+      "confidence": 1.0
+    },
+    {
+      "source": "Dense_Retrieval",
+      "target": "RAG",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "Dense_Retrieval",
+      "target": "GraphRAG",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "Dense_Retrieval",
+      "target": "KG_RAG",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "Dense_Retrieval",
+      "target": "source_001",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "Dense_Retrieval",
+      "target": "source_003",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "Dense_Retrieval",
+      "target": "source_009",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "Fact_Verification",
+      "target": "RAG",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "Fact_Verification",
+      "target": "source_010",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "GraphRAG",
+      "target": "source_011",
+      "type": "references",
+      "round_created": 2,
+      "confidence": 1.0
+    },
+    {
+      "source": "GraphRAG",
+      "target": "source_023",
+      "type": "references",
+      "round_created": 2,
+      "confidence": 1.0
+    },
+    {
+      "source": "GraphRAG",
+      "target": "RAG",
+      "type": "references",
+      "round_created": 2,
+      "confidence": 1.0
+    },
+    {
+      "source": "GraphRAG",
+      "target": "KG_RAG",
+      "type": "references",
+      "round_created": 2,
+      "confidence": 1.0
+    },
+    {
+      "source": "GraphRAG",
+      "target": "Dense_Retrieval",
+      "type": "references",
+      "round_created": 2,
+      "confidence": 1.0
+    },
+    {
+      "source": "KB_Degradation",
+      "target": "RAG",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "KB_Degradation",
+      "target": "source_029",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "KG_RAG",
+      "target": "RAG",
+      "type": "references",
+      "round_created": 2,
+      "confidence": 1.0
+    },
+    {
+      "source": "KG_RAG",
+      "target": "GraphRAG",
+      "type": "references",
+      "round_created": 2,
+      "confidence": 1.0
+    },
+    {
+      "source": "KG_RAG",
+      "target": "Dense_Retrieval",
+      "type": "references",
+      "round_created": 2,
+      "confidence": 1.0
+    },
+    {
+      "source": "KG_RAG",
+      "target": "source_014",
+      "type": "references",
+      "round_created": 2,
+      "confidence": 1.0
+    },
+    {
+      "source": "Knowledge_Boundary",
+      "target": "RAG",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "Knowledge_Boundary",
+      "target": "source_030",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "Long_Context",
+      "target": "RAG",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "Long_Context",
+      "target": "source_021",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "Long_Context",
+      "target": "source_022",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "RAG",
+      "target": "Dense_Retrieval",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "RAG",
+      "target": "GraphRAG",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "RAG",
+      "target": "Agentic_RAG",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "RAG",
+      "target": "KG_RAG",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "RAG",
+      "target": "Long_Context",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "RAG",
+      "target": "RAG_Evaluation",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "RAG",
+      "target": "KB_Degradation",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "RAG",
+      "target": "source_002",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "RAG",
+      "target": "source_005",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "RAG",
+      "target": "source_007",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "RAG",
+      "target": "source_008",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "RAG",
+      "target": "source_025",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "RAG",
+      "target": "source_027",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "RAG",
+      "target": "source_030",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "RAG",
+      "target": "source_001",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "RAG",
+      "target": "source_006",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "RAG",
+      "target": "source_021",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "RAG_Evaluation",
+      "target": "source_018",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "RAG_Evaluation",
+      "target": "source_026",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "RAG_Evaluation",
+      "target": "RAG",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "RAG_Evaluation",
+      "target": "source_007",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "Self_RAG",
+      "target": "RAG",
+      "type": "references",
+      "round_created": 2,
+      "confidence": 1.0
+    },
+    {
+      "source": "Self_RAG",
+      "target": "Agentic_RAG",
+      "type": "references",
+      "round_created": 2,
+      "confidence": 1.0
+    },
+    {
+      "source": "Self_RAG",
+      "target": "Corrective_RAG",
+      "type": "references",
+      "round_created": 2,
+      "confidence": 1.0
+    },
+    {
+      "source": "Self_RAG",
+      "target": "source_016",
+      "type": "references",
+      "round_created": 2,
+      "confidence": 1.0
+    },
+    {
+      "source": "Speculative_RAG",
+      "target": "source_019",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "Speculative_RAG",
+      "target": "RAG",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "Speculative_RAG",
+      "target": "Corrective_RAG",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "source_001",
+      "target": "RAG",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "source_001",
+      "target": "source_003",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "source_001",
+      "target": "source_009",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "source_002",
+      "target": "source_001",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "source_002",
+      "target": "source_004",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "source_002",
+      "target": "source_006",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "source_003",
+      "target": "Dense_Retrieval",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "source_003",
+      "target": "RAG",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "source_003",
+      "target": "source_001",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "source_003",
+      "target": "source_009",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "source_004",
+      "target": "RAG",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "source_004",
+      "target": "Dense_Retrieval",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "source_004",
+      "target": "source_002",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "source_004",
+      "target": "source_008",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "source_005",
+      "target": "source_001",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "source_005",
+      "target": "source_010",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "source_006",
+      "target": "source_002",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "source_006",
+      "target": "source_008",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "source_007",
+      "target": "RAG_Evaluation",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "source_007",
+      "target": "source_018",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "source_007",
+      "target": "source_026",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "source_008",
+      "target": "RAG",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "source_008",
+      "target": "source_002",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "source_008",
+      "target": "source_006",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "source_009",
+      "target": "Dense_Retrieval",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "source_009",
+      "target": "source_001",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "source_009",
+      "target": "source_003",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "source_010",
+      "target": "Fact_Verification",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "source_010",
+      "target": "source_005",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "source_010",
+      "target": "source_025",
+      "type": "references",
+      "round_created": 1,
+      "confidence": 1.0
+    },
+    {
+      "source": "kb_health",
+      "target": "Citation_Faithfulness",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "kb_health",
+      "target": "Fact_Verification",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "kb_health",
+      "target": "Self_RAG",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "kb_health",
+      "target": "Corrective_RAG",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "kb_health",
+      "target": "GraphRAG",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "kb_health",
+      "target": "RAG",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "kb_health",
+      "target": "Speculative_RAG",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "kb_health",
+      "target": "rag_evolution",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "rag_conflicts",
+      "target": "source_021",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "rag_conflicts",
+      "target": "source_022",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "rag_conflicts",
+      "target": "source_011",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "rag_conflicts",
+      "target": "source_023",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "rag_conflicts",
+      "target": "source_018",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "rag_conflicts",
+      "target": "source_026",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "rag_conflicts",
+      "target": "source_027",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "rag_conflicts",
+      "target": "source_030",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "rag_conflicts",
+      "target": "rag_evolution",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "rag_conflicts",
+      "target": "kb_health",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "rag_conflicts",
+      "target": "Long_Context",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "rag_conflicts",
+      "target": "GraphRAG",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "rag_evolution",
+      "target": "rag_conflicts",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "rag_evolution",
+      "target": "kb_health",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "rag_evolution",
+      "target": "RAG",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "Multimodal_RAG",
+      "target": "source_028",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "Multimodal_RAG",
+      "target": "RAG",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    },
+    {
+      "source": "kb_health",
+      "target": "Multimodal_RAG",
+      "type": "references",
+      "round_created": 3,
+      "confidence": 1.0
+    }
+  ]
+}

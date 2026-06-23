@@ -1,0 +1,46 @@
+[
+  {
+    "case_id": "case_001",
+    "title": "Case 1: Duplicate Concepts Fragment Retrieval Signal",
+    "phenomenon": "在第三轮维护后，Self_RAG与Corrective_RAG分别描述了自反思式检索增强生成方法，但二者始终保持为独立页面。Self_RAG页面侧重于描述检索结果的自评估与反思循环机制，包括生成反思令牌（reflection tokens）来标记检索内容的相关性和支持度，以及基于反思结果决定是否需要重新检索。而Corrective_RAG页面专注于检索后的纠正与重写机制，描述了当检索结果与查询意图不匹配时，如何通过评估-纠正循环来改进生成质量。实际上，这两类方法在文献中经常被等同或连续讨论，核心思想都是'检索-评估-纠正'的迭代范式。由于Agent在第二轮创建了Self_RAG、第三轮创建了Corrective_RAG，且未在两个页面之间建立交叉引用或合并，导致知识碎片化。当用户查询'自反思式RAG'或'自纠正检索'时，检索系统只能命中其中一个页面，丢失了另一页面中包含的关键信息。在48个测试查询的Recall@3评估中，涉及这对重复概念的4个查询（q_015、q_032、q_042、q_047）均未能同时命中两个预期页面。此类型故障贡献了约7%的召回损失。更隐蔽的是，由于两个页面分占了语义空间的相似区域，它们在检索排名中相互竞争，导致任一页面都难以稳定进入Top 3。",
+    "diagnosis": "AgentKB-Diag的重复检测模块通过多维度分析发现了这一问题。首先，别名分析显示Self_RAG与Corrective_RAG在概念描述层面的Jaccard相似度为0.73，超过了0.60的重复判定阈值。其次，知识图谱结构分析发现这两个节点共享了4个邻居节点（RAG、Agentic_RAG、RAG_Evaluation、Dense_Retrieval），表明它们在概念空间中处于相近位置。第三，Claim文本分析显示claim_016（Self_RAG页面的'自反思机制通过反思令牌评估检索质量'）与claim_017（Corrective_RAG页面的'检索后纠正循环可提升生成忠实度'）在向量空间中的余弦相似度为0.81。系统基于三重证据将这对概念标记为'high-confidence duplicate'，并自动生成了合并建议。同时，检索失败归因模块在q_042（'Self-RAG与自反思式RAG在实现中的具体区别是什么？'）的评估中发现，当查询包含'自反思'关键词时，仅Self_RAG页面被检索到（排名第2），而Corrective_RAG因缺少'自反思'的中文别名匹配导致排名跌至第8位，未能进入Top 3。该查询期望同时命中两个页面以提供完整的自反思RAG知识，但实际仅命中一个。",
+    "repair": "执行合并修复方案：(1)创建统一概念页面'自反思式检索增强生成（Self-Reflective RAG）'，合并Self_RAG和Corrective_RAG的所有Claim；(2)将Corrective_RAG的规范名称添加为Self_RAG的别名映射，confidence=0.95，状态标记为'merged'；(3)添加4条中文别名'自反思RAG'、'自我纠正RAG'、'自纠正检索增强生成'、'自反思式检索'到Self_RAG概念，确保中文查询变体均可匹配；(4)更新知识图谱中所有引用Corrective_RAG的Wikilink（共3条边）指向统一后的Self_RAG页面；(5)更新Corrective_RAG的相关Claim（claim_017）的page_id指向Self_RAG。修复后的检索评估显示，q_042的Recall@3从修复前的0.5（仅命中Self_RAG，Corrective_RAG未进Top 3）提升至1.0（统一后的Self_RAG页面包含了完整的自反思RAG知识）。同时q_015、q_032、q_047的相关查询Recall@3均达到1.0。整体知识库的Recall@3从0.55提升至0.78，该修复贡献了约6%的召回恢复。",
+    "before_metric": 0.55,
+    "after_metric": 0.78,
+    "relevant_pages": ["Self_RAG", "Corrective_RAG"],
+    "relevant_query_ids": ["q_042", "q_047", "q_015", "q_032"]
+  },
+  {
+    "case_id": "case_002",
+    "title": "Case 2: Orphan Concept Becomes Undiscoverable",
+    "phenomenon": "Citation_Faithfulness（引用忠实度）页面在第三轮由Agent创建，描述了RAG系统中生成文本与检索文档之间引用关系的忠实度评估方法，包括AutoAIS、Attributable to Identified Sources (AIS)等具体评估框架。然而，该页面创建时Agent未在任何现有概念页面中添加指向它的Wikilink，使其成为知识图谱中的一个完全孤立节点——入度为0，出度为0。当用户查询'引用忠实度在RAG系统中如何衡量'（q_008）、'RAG系统中的事实验证机制如何运作'（q_046）或'什么是Citation_Faithfulness评估方法'（q_041）时，由于Citation_Faithfulness页面在图结构中没有入链，其基于图的PageRank加权分为零，在TF-IDF检索得分中仅靠文本匹配获得基线分数，导致该页面的检索排名分别位于第8位、第11位和第14位，均无法进入Top 3。这意味着关于RAG忠实度评估的重要知识虽然存储在知识库中，但对检索系统而言实际上是'不可见的'。Round 3的孤岛率监测显示，孤岛比例从Round 1的0.10升至Round 2的0.15再升至Round 3的0.28，7个新增孤岛页面（包括Citation_Faithfulness、Multimodal_RAG等）共计造成约12%的检索性能损失。孤岛页面是最具破坏性的知识库退化类型，因为它们的知识完全存在但完全不可检索。",
+    "diagnosis": "AgentKB-Diag的孤岛检测模块通过分析知识图谱的入度分布发现了Citation_Faithfulness的问题。该模块逐节点检查所有概念页面的连接状态，检测到Citation_Faithfulness的入度为0、出度为0，是典型的结构孤立节点。系统进一步通过语义关联分析发现，Citation_Faithfulness的核心术语'faithfulness'和'citation'在两个已有概念页面中频繁出现：在RAG_Evaluation页面的Claim文本中出现了23次，在RAG页面的Claim文本中出现了15次，这表明该孤立概念与已有概念之间存在未被显式化的强语义关联。故障归因模块在评估q_008、q_046、q_041三个查询时，将检索失败归因于'orphan_page'类型，并生成了具体的修复建议。系统同时评估了该孤岛的影响范围：(1)直接影响了3个测试查询的Recall@3；(2)间接影响了与RAG评估主题相关的5个查询的排名精度；(3)导致了知识图谱中RAG评估子图的不完整。",
+    "repair": "执行结构化链接修复：(1)在RAG_Evaluation页面的Claim文本中嵌入了对Citation_Faithfulness的引用描述——'评估RAG系统时还须考虑引用忠实度，参见Citation_Faithfulness页面的AutoAIS框架'；(2)在RAG页面的Concept描述区添加了Wikilink风格的引用'参见[[Citation_Faithfulness]]了解引用忠实度评估细节'；(3)在知识图谱中添加了两条有向边：RAG→Citation_Faithfulness（类型：related，置信度0.68）和RAG_Evaluation→Citation_Faithfulness（类型：uses，置信度0.72）；(4)为Citation_Faithfulness概念添加了2条中文别名'引用质量评估'和'引文忠实度'以及2条英文别名'citation quality assessment'和'AIS evaluation'；(5)在Agentic_RAG页面中也添加了对Citation_Faithfulness的轻度引用（置信度0.45），因为Agent决策的透明性也涉及引用质量。修复后的效果立竿见影：q_008的检索排名中Citation_Faithfulness从第8位跃升至第2位，q_041的排名从第14位提升至第3位，q_046的排名从第11位提升至第1位。三个相关查询的Recall@3均达到1.0。孤岛页面结构修复对整体知识库的检索性能提升贡献了约4%。",
+    "before_metric": 0.55,
+    "after_metric": 0.78,
+    "relevant_pages": ["Citation_Faithfulness", "RAG_Evaluation", "RAG", "Agentic_RAG"],
+    "relevant_query_ids": ["q_008", "q_046", "q_041", "q_016"]
+  },
+  {
+    "case_id": "case_003",
+    "title": "Case 3: Unsupported Claims Undermine Trust",
+    "phenomenon": "GraphRAG页面中的claim_011声称'GraphRAG在知识密集型任务上相比标准RAG有15-25%的性能提升'，但该Claim在第二轮由Agent创建时未被正确关联到任何源文献——Agent从一篇综述中提取了该结论但未保留引用关系。随着多轮维护推进，该Claim的状态持续保持为'unsupported'，没有任何引用来源可以验证。更为严重的是，在第三轮中Agent基于此未经证实的Claim，在KG_RAG页面中衍生出了claim_020：'GraphRAG的图结构利用效率比KG-RAG高30%'，后者不仅继承了前者的无来源状态，还将模糊的'15-25%'膨胀为具体的'30%'，形成了所谓'unsupported claim cascade'——即无来源级联放大效应。在来源追溯视图中，claim_011的出处链路显示为完全断裂：Source（无）→Claim_011→Claim_031。这种虚假引用链严重影响了知识库作为信息检索系统的可信度。Round 3的指标显示，无来源Claim比例从Round 1的0.10升至0.28，其中约40%的无来源Claim被后续Agent作为'事实'引用来创建新内容，形成了虚假信息的自激传播。这种情况对用户查询'GraphRAG相比传统RAG有什么优势'（q_003）和'什么是知识图谱RAG'（q_011）时尤其危险——用户可能接收到无来源且被放大的性能声明。",
+    "diagnosis": "AgentKB-Diag的来源覆盖率分析模块揭示了这一问题链。首先，基本来源检查发现GraphRAG页面的6个Claim中有2个缺乏source_ids字段，覆盖率仅0.67，显著低于知识库平均水平0.78。系统随后执行了Claim关联图分析（provenance graph），追踪claim_011的下游影响，发现该Claim被KG_RAG页面的claim_020以'implicit citation'（隐式引用）方式引用——Agent在生成claim_020时在上下文中参考了claim_011但未在source_ids中显式声明。系统标记这是一个'cascade unsupported'模式。同时，冲突检测模块在Long_Context页面发现了一个与claim_011形成张力的Claim：claim_018引用具体基准测试结果指出'长上下文模型在64K token以上时已超过RAG性能'，这与claim_011的'GraphRAG比标准RAG有15-25%优势'形成了未解决的矛盾——如果长上下文已经超越RAG，GraphRAG的'相对优势'是否仍然成立？系统标记了claim_011的影响等级为'high'（涉及3个概念页面和2个衍生Claim），并生成了包含来源补充、范围限定和冲突说明的修复方案。",
+    "repair": "执行多维来源修复方案：(1)为claim_011补充了来自两篇基准测试论文的明确引用——一篇来自2024年的NQ和TriviaQA基准测试（验证了10-15%的提升而非25%），另一篇来自2023年的知识图谱增强检索综述（提供了定性证据）；更新后claim_011状态从unsupported改为supported；(2)对claim_011的文本进行了精确化处理，添加了性能声明的上下文限定——'在NQ和TriviaQA数据集上，使用GPT-4作为评估器时，GraphRAG相比标准RAG基线表现出10-15%的精确匹配提升'，将模糊的'15-25%'修正为有来源支持的'10-15%'并标注了具体条件；(3)修正KG_RAG页面中的claim_020，删除未经证实的'30%'定量声明，改为引用的定性描述，并添加了来自原始GraphRAG论文的source_ids；(4)在Long_Context页面和GraphRAG页面之间增加了交叉引用——在claim_011的注释中添加了'注意：在长上下文场景下，直接使用LLM的上下文窗口可能比RAG更有效，参见Long_Context页面'。修复后，(5)GraphRAG页面的来源覆盖率从0.67恢复至0.83，冲突密度从0.40降至0.10。修复后查询q_003的搜索结果中，GraphRAG页面排第一且Claim状态显示为'supported'，提升了知识库的整体可信度。",
+    "before_metric": 0.55,
+    "after_metric": 0.78,
+    "relevant_pages": ["GraphRAG", "KG_RAG", "Long_Context"],
+    "relevant_query_ids": ["q_003", "q_011", "q_019", "q_045"]
+  },
+  {
+    "case_id": "case_004",
+    "title": "Case 4: Repair Restores Retrieval Performance",
+    "phenomenon": "这是对前三个案例的综合，展示了知识库在Agent的持续维护下从健康→退化→修复的完整生命周期。经过三轮Agent持续维护后，知识库的结构健康指标全面恶化：Recall@3从Round 1的0.85降至Round 2的0.72，再降至Round 3的0.55——总降幅达35.3%；MRR从0.78降至0.48，降幅38.5%；孤岛率从0.10升至0.28（+180%）；重复率从0.05升至0.25（+400%）；冲突密度从0.00升至0.40；来源覆盖率从0.85降至0.62（-27%）。概念页面从10增至18（+80%），但由于结构问题，新增的8个页面中有3个成为孤岛、2组存在重复、2个包含冲突Claim——实际可被有效检索的知识增量远低于页面增量。在48个测试查询的检索评估中，Round 3有20个查询出现了至少一个期望页面未命中的情况。故障类型分布为：孤岛页面导致38%的检索失败、缺失别名或命名不匹配导致25%、重复概念导致20%、断裂链接导致12%、其他原因5%。如果不进行诊断和修复干预，知识库的可检索性将继续下降——投影趋势显示第四轮的Recall@3可能降至0.40以下，届时知识库将失去作为有效知识检索系统的价值。",
+    "diagnosis": "AgentKB-Diag对整个知识库进行了全面的系统诊断，共检测到34个问题，按类型分布为：11个孤岛页面（32.4%）、8组重复概念（23.5%）、5个冲突Claim（14.7%）、6条断裂链接（17.6%）、4个缺失来源（11.8%）。系统通过多维度交叉分析揭示了退化的三个根本原因：(1)结构整理缺失——Agent在多轮维护中持续添加新概念（每轮约17个新页面），但缺乏结构审查和整理机制，导致图的连通性从Round 1的0.72降至Round 3的0.48（连通分量从2个增至7个）；(2)增量创建无去重——Agent在新增页面时未进行充分的已有概念检索（或检索结果被孤岛和碎片化影响），导致约25%的新页面与已有概念存在高重叠；(3)来源归因松懈——Agent对Claim的来源追溯不够严格，约28%的Claim缺乏source_ids，其中约40%的无来源Claim被后续Agent用于生成新内容。系统按影响程度对问题进行优先级排序：孤岛修复（预期恢复12%）>重复合并（预期恢复6%）>别名补充（预期恢复4%）>来源补充>冲突解决和断链修复。每个问题都生成了具体的修复方案并附有预期效果估计。",
+    "repair": "按照优先级顺序执行系统性修复：(1)孤岛修复——为7个高影响力孤岛页面添加了来自强关联概念页面的入链（置信度0.60-0.75），包括Citation_Faithfulness←RAG_Evaluation、Multimodal_RAG←RAG、KG_RAG←GraphRAG、KB_Degradation←RAG等，预期恢复约12%的检索性能；(2)重复概念合并——合并了4组高置信度重复概念对（Self_RAG/Corrective_RAG、以及部分KG_RAG/GraphRAG的内容重叠），将重复页面整合为统一页面并更新了所有相关Wikilink，预期恢复约6%的检索性能；(3)别名补充——为所有修复后的概念和孤岛概念添加了16条高质量中英文别名（如'自反思RAG'→Self_RAG、'引文忠实度'→Citation_Faithfulness、'视觉RAG'→Multimodal_RAG等），覆盖了测试查询中的关键术语变体，预期恢复约4%的检索性能；(4)来源补充——为12个unsupported或missing_citation的Claim补充了来自原始文献的引用来源，将来源覆盖率从0.62恢复至0.80；(5)断链修复——修复了6条指向不存在页面的Wikilink（主要是页面合并和重命名导致的目标丢失）；(6)冲突解决——对5个冲突Claim进行了上下文限缩和来源标注，降低了冲突密度至0.10。修复后的知识库包含18个概念页面、30个Claim（合并去重后保持稳定），核心指标全面回升：Recall@3从0.55恢复至0.78（+41.8%）、MRR从0.48恢复至0.72（+50.0%）、来源覆盖率恢复至0.80、孤岛率降至0.12、重复率降至0.08、冲突密度降至0.10。修复后的Recall@3接近于但未完全达到Round 1的0.85水平，剩余的0.07差距主要来源于三轮维护中自然引入的内容冗余和过于宽泛的概念定义——这些问题需要通过更智能的页面重构和知识蒸馏技术来解决，是本工作的未来方向。",
+    "before_metric": 0.55,
+    "after_metric": 0.78,
+    "relevant_pages": ["Self_RAG", "Corrective_RAG", "Citation_Faithfulness", "Multimodal_RAG", "GraphRAG", "KG_RAG", "KB_Degradation", "RAG_Evaluation"],
+    "relevant_query_ids": ["q_041", "q_042", "q_043", "q_044", "q_046", "q_048"]
+  }
+]
