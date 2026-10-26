@@ -1,6 +1,16 @@
+# ─────────────────────────────────────────────────────────────
+# AgentKB-Diag .gitignore
+# ─────────────────────────────────────────────────────────────
+# 本项目是研究原型，包含：
+#   1. 核心代码（backend/, frontend/, okf/, workspace/）  →  提交
+#   2. 报告生成目录（报告/, report/）                    →  全部不提交
+#   3. 开发过程产物（CLAUDE.md、设计文档、.omc/、experiments/）→ 不提交
+# ─────────────────────────────────────────────────────────────
+
 # ---- Python ----
 __pycache__/
 *.py[cod]
+*$py.class
 *.egg-info/
 .eggs/
 .pytest_cache/
@@ -29,23 +39,126 @@ pnpm-debug.log*
 .DS_Store
 Thumbs.db
 
-# ---- Project-generated artifacts ----
+# ---- Project generated runtime artifacts ----
 experiments/
 .omc/
+.mindfs/
 backend/.pytest_cache/
 backend/data/
 
 # ---- Data downloads (large binaries, regeneratable) ----
-# PDFs are downloadable from arXiv; keep metadata, skip binary
 data/raw/*/source_*.pdf
+data/raw/_download_log.json
 
 # ---- Reports / logs (generated) ----
 workspace/reports/*.csv
+workspace/reports/*.png
 *.log
 
-# ---- MindFS / session state ----
-.mindfs/
+# ─────────────────────────────────────────────────────────────
+# 环境变量 / 密钥文件（绝对不能上传）
+# 任何 .env* 文件除 .env.example / .env.sample 模板外都不提交
+# ─────────────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
 
-# ---- Windows reserved filenames ----
+# 项目内任何位置的密钥文件
+**/secrets.json
+**/secrets.yaml
+**/secrets.yml
+**/credentials.json
+**/credentials.yaml
+**/*.pem
+**/*.key
+**/*.p12
+**/*.pfx
+
+# IDE 的 .env 历史
+.idea/workspace.xml
+.idea/tasks.xml
+
+# ─────────────────────────────────────────────────────────────
+# 报告生成目录（整目录不提交）
+# ─────────────────────────────────────────────────────────────
+报告/
+report/
+
+# ─────────────────────────────────────────────────────────────
+# 开发规划与设计文档（开发过程产物，不提交）
+# ─────────────────────────────────────────────────────────────
+/CLAUDE.md
+/agent_kb_diag_产品需求与系统设计文档.md
+
+# ─────────────────────────────────────────────────────────────
+# Windows reserved filenames
+# ─────────────────────────────────────────────────────────────
 nul
 frontend/nul
+
+# ─────────────────────────────────────────────────────────────
+# 临时文件 / 编辑器锁
+# ─────────────────────────────────────────────────────────────
+*.tmp
+*.bak
+*.orig
+*~
+
+# ── 2026-10-27 统一范式补全（与 techdou 仓 .gitignore 标准对齐）──
+
+# ── 私密信息与密钥：绝不入库 ──
+*.key
+*.pem
+*.p12
+*.pfx
+secrets*
+credentials*
+*.token
+_htpasswd
+
+
+# ── 开发软件配置目录：本地工具状态不上传 ──
+.claude/
+.claude.json
+.codex/
+.cursor/
+.gemini/
+.zcode/
+.windsurf/
+.trae/
+.roo/
+.aider*
+continue/
+.aws/
+.ssh/
+
+
+# ── 内部文档与开发状态：不入版本控制，避免泄漏 ──
+# README.md / CHANGELOG.md / SKILL.md / references/ / evals/ 是仓库正式内容，保持跟踪
+drafts/
+notes/
+private/
+internal/
+dev/
+dev-notes/
+.archive/
+.research/
+*.draft.md
+*.local.md
+*.wip.md
+DEVLOG.md
+TODO.md
+STATUS.md
+
+
+# ── Node 前端产物 ──
+dist/
+build/
+.next/
+.nuxt/
+
+
+# ── 系统与临时文件 ──
+desktop.ini
